@@ -1,3 +1,7 @@
+/* === RPG Fortress Manager - style.css === */
+/* Última actualización: 2025-05-12 */
+
+/* ======= RESET Y GENERALES ======= */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -6,9 +10,10 @@ body {
 }
 
 p {
-  line-height: 2; /* 1.6 es un buen valor base, se puede ajustar */
+  line-height: 2;
 }
 
+/* ======= HEADER ======= */
 header {
   background-color: #3a4a3f;
   padding: 20px;
@@ -25,6 +30,7 @@ header p {
   font-size: 14px;
 }
 
+/* ======= NAV ======= */
 nav {
   background-color: #356b3f;
   padding: 10px;
@@ -38,69 +44,48 @@ nav a {
   font-weight: bold;
 }
 
-/* Esta es la sección "hero", la parte más visual de la página. 
-   Aquí pongo una imagen de fondo impactante y el texto principal del sitio. */
-  .hero {
-    background-image: url('../assets/img/hero_fondo.png'); /* Ruta a la imagen que quiero mostrar de fondo */
-    background-size: cover; /* Me aseguro que la imagen cubra toda el área, aunque se tenga que recortar */
-    background-position: center; /* Centro la imagen para que se vea equilibrada sin importar el tamaño de la pantalla */
-    padding: 120px 20px; /* Le doy espacio interior para que el texto no esté pegado a los bordes */
-    text-align: center; /* Todo el contenido dentro se alinea al centro */
-    color: white; /* El texto por defecto dentro del hero será blanco */
-    position: relative; /* Esto me permite posicionar elementos relativos al contenedor, si los necesitara después */
-  }
-  
-  /* Aquí personalizo el título principal que aparece dentro del hero */
-  .hero h2 {
-    font-size: 48px; /* Hago el texto bien grande para que llame la atención */
-    font-weight: bold; /* Lo hago en negrita para más presencia */
-    margin: 0; /* Elimino el espacio por defecto que tiene arriba y abajo */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Le agrego sombra al texto para que se lea bien sobre la imagen */
-  }
-  
-  /* Esto es para el subtítulo o tagline que aparece debajo del título */
-  .tagline {
-    margin-top: 20px; /* Dejo espacio entre el título y esta frase */
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo casi blanco con un poco de transparencia */
-    color: #711414; /* Color rojo oscuro para el texto, lo saco del ejemplo original */
-    font-weight: bold; /* Que se vea fuerte y claro */
-    display: inline-block; /* Le doy formato de "etiqueta" o chip, sin ocupar todo el ancho */
-    padding: 8px 16px; /* Espacio interior para que no esté apretado */
-    border-radius: 15px; /* Bordes redondeados para que parezca una etiqueta visualmente atractiva */
-    font-size: 16px; /* Tamaño cómodo de leer */
-    text-shadow: none; /* No quiero sombra aquí porque ya tiene fondo blanco */
-  }
-
-/* Esto es para el subtítulo o tagline que aparece debajo del título */
-.tagline {
-  margin-top: 20px; /* Dejo espacio entre el título y esta frase */
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo casi blanco con un poco de transparencia */
-  color: #711414; /* Color rojo oscuro para el texto, lo saco del ejemplo original */
-  font-weight: bold; /* Que se vea fuerte y claro */
-  display: inline-block; /* Le doy formato de "etiqueta" o chip, sin ocupar todo el ancho */
-  padding: 8px 16px; /* Espacio interior para que no esté apretado */
-  border-radius: 15px; /* Bordes redondeados para que parezca una etiqueta visualmente atractiva */
-  font-size: 16px; /* Tamaño cómodo de leer */
-  text-shadow: none; /* No quiero sombra aquí porque ya tiene fondo blanco */
+/* ======= HERO ======= */
+.hero {
+  background-image: url('../assets/img/hero_fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 120px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
 }
 
-.tagline {
-  margin-top: 10px;
-  background-color: white;
-  color: black;
-  display: inline-block;
-  padding: 5px 10px;
-  border-radius: 10px;
+.hero h2 {
+  font-size: 3rem;
   font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
 }
 
+.tagline {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #711414;
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-size: 16px;
+  text-shadow: none;
+}
+
+/* ======= CONTENIDO ======= */
 .contenido {
-  background-color: rgba(0,0,0,0.6);
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  margin: auto;
+  max-width: 800px;
+  border-radius: 10px;
   line-height: 1.6;
 }
 
-/* Footer general: color oscuro, texto blanco, centrado verticalmente */
+/* ======= FOOTER ======= */
 footer {
   background-color: #1a1a1a;
   padding: 15px 0;
@@ -108,35 +93,42 @@ footer {
   font-size: 14px;
 }
 
-/* Contenedor que separa el texto del grupo de íconos */
 .footer-content {
-  display: flex;              /* Distribuyo horizontalmente */
-  justify-content: space-between;  /* Alineo texto a la izquierda, íconos a la derecha */
-  align-items: center;        /* Centro verticalmente */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
   max-width: 1000px;
   margin: auto;
   padding: 0 20px;
 }
 
-/* Contenedor de los íconos sociales */
-.footer-icons {
-  display: flex;
-  gap: 10px;                  /* Espacio entre los íconos */
+@media(min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
 }
 
-/* Estilo para cada ícono */
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
 .icono-footer {
   width: 24px;
   height: 24px;
-  filter: brightness(0) invert(1); /* Los hago blancos si son íconos oscuros */
+  filter: brightness(0) invert(1);
   transition: transform 0.2s ease;
 }
 
-/* Animación suave al pasar el mouse por encima */
 .icono-footer:hover {
   transform: scale(1.2);
 }
 
+/* ======= BLOG ======= */
 .lista-blog {
   list-style: none;
   padding: 0;
@@ -159,8 +151,6 @@ footer {
   text-decoration: underline;
 }
 
-/*BLOG BLOG BLOG */
-
 .blog-resumen {
   display: block;
   font-size: 14px;
@@ -168,7 +158,6 @@ footer {
   margin-top: 5px;
 }
 
-/* Contenedor horizontal para cada entrada de blog */
 .blog-card {
   display: flex;
   background-color: #1e1e1e;
@@ -178,14 +167,12 @@ footer {
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-/* Imagen a la izquierda */
 .blog-img {
   width: 200px;
   height: auto;
   object-fit: cover;
 }
 
-/* Contenido textual a la derecha */
 .blog-texto {
   padding: 15px;
   color: #fff;
@@ -194,7 +181,6 @@ footer {
 .blog-texto h3 {
   margin-top: 0;
   font-size: 20px;
-  color: #fff;
 }
 
 .blog-texto p {
@@ -202,10 +188,7 @@ footer {
   color: #ccc;
 }
 
-
-/*CONTACTO*/
-
-/* Contenedor principal del contacto: lado a lado */
+/* ======= CONTACTO ======= */
 .contacto {
   display: flex;
   flex-wrap: wrap;
@@ -215,7 +198,6 @@ footer {
   gap: 20px;
 }
 
-/* Caja de información de contacto */
 .contacto-info {
   flex: 1;
   min-width: 250px;
@@ -229,7 +211,6 @@ footer {
   color: #8ce0e6;
 }
 
-/* Caja del formulario */
 .contacto-formulario {
   flex: 2;
   min-width: 300px;
