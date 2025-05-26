@@ -1,0 +1,54 @@
+// _layout.scss
+// Aquí organizamos el diseño general de las secciones comunes usando Flexbox y Grid
+// Ideal para clases como .contenido, .roadmap, .container, etc.
+
+// Contenedor principal de texto o secciones internas
+.contenido {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  margin: auto;
+  max-width: 800px;
+  border-radius: 10px;
+  line-height: 1.6;
+
+  @include responsive(tablet) {
+    padding: 60px;
+  }
+}
+
+// Layout específico para la sección Roadmap (usa Grid)
+.roadmap-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+
+  @include responsive(tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.roadmap-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .roadmap-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .roadmap-text {
+    h4, p {
+      margin: 0;
+      color: #222;
+    }
+
+    h4 {
+      margin-bottom: 0.3rem;
+    }
+  }
+}
