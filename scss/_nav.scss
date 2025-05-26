@@ -1,0 +1,18 @@
+// _nav.scss
+// Estilos para el menú de navegación principal.
+
+nav {
+  background-color: $color-nav;
+  padding: 10px;
+  text-align: center;
+
+  a {
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+// _contacto.scss
+// Estilos para la página de contacto: datos personales + formulario.
+
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 40px 20px;
+  gap: 20px;
+
+  .contacto-info {
+    flex: 1;
+    min-width: 250px;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+
+    h2 {
+      margin-top: 0;
+      color: $color-acento;
+    }
+  }
+
+  .contacto-formulario {
+    flex: 2;
+    min-width: 300px;
+    background-color: #2f2f2f;
+    padding: 20px;
+    border-radius: 10px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input,
+      textarea {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: 14px;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      button {
+        background-color: $color-acento;
+        color: black;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background-color: darken($color-acento, 10%);
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,20 @@
-Este es un proyecto de sitioweb para la carrera de programación fullstack en CODERHOUSE
-Además, es para un proyecto personal de un bot de discord que se integra a servidores e integra funciones y comandos que permiten una experiencia interactiva donde el servidor simulará ser una fortaleza.
-La actividad de sus usuarios en distintos canales permitirá recolectar recursos, progresar en la construcción de infraestructuras y también trabajar en la generación recursos avanzados.
+# RPG Fortress Manager
+
+Sitio web responsive diseñado para presentar el proyecto RPG Fortress Manager. Utiliza HTML, SCSS, y principios de diseño responsive.
+
+## Características
+
+- Sitio responsive (mobile-first)
+- Maquetado con Flexbox y Grid
+- Estilos organizados con SCSS
+- Versionado en Git
+
+## Cómo ver el sitio
+
+1. Clona el repositorio
+2. Compila el SCSS (`npm install sass -g`, luego `sass scss/main.scss css/style.css --watch`)
+3. Abre `index.html` en tu navegador
+
+## Créditos
+
+Creado por Rodrigo Iván Figueroa Schöbitz

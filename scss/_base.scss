@@ -1,0 +1,23 @@
+// _base.scss
+// Estilos generales que se aplican a todo el sitio (reset básico, tipografía, etc.)
+
+body {
+  margin: 0;
+  font-family: $fuente-principal;
+  background-color: $color-fondo;
+  color: $color-texto-principal;
+}
+
+p {
+  line-height: 2; // Facilita la lectura de los párrafos
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  color: $color-acento;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

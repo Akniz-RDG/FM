@@ -1,0 +1,8 @@
+@import 'variables';     // Paleta de colores y fuentes
+@import 'mixins';        // Funciones reutilizables y media queries
+@import 'base';          // Estilos generales del sitio (body, títulos, párrafos)
+@import 'nav';           // Estilos de la barra de navegación
+@import 'hero';          // Estilos del banner principal
+@import 'blog';          // Estilos específicos del blog
+@import 'contacto';      // Estilos de la sección de contacto
+@import 'footer';        // Estilos del pie de página
