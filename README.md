@@ -64,7 +64,7 @@ Proyecto_Fortaleza/
 2. Instala Sass (una sola vez):  
    `npm install -g sass`
 
-3. Compilá el SCSS en tiempo real:  
+3. Compila el SCSS en tiempo real:  
    `sass scss/main.scss css/style.css --watch`
 
 4. Abre `index.html` en tu navegador
